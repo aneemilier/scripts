@@ -1,6 +1,7 @@
-curl -O https://gitlab.stud.idi.ntnu.no/markma/dcsg-1005-tante-evry/-/raw/main/code/LageBrukereCSV.ps1
+# I powershell core!
+curl -O https://raw.githubusercontent.com/aneemilier/scripts/main/LageBrukereCSV.ps1
 #Invoke-WebRequest -Uri "https://gitlab.stud.idi.ntnu.no/markma/dcsg-1005-tante-evry/-/raw/main/code/LageBrukereCSV.ps1" -Outfile "C:\Users\Administrator\Downloads\LageBrukereCSV.ps1"
-#Fikk ikke curl til å fungere.
+#Dersom ikke curl fungerer (som det ikke gjør i windows powershell, kan Invoke-WebRequest brukes.
 .\LageBrukereCSV.ps1
 #Will create CSV file to be used in this script.
 $ADUsers = Import-Csv tantetransportusers.csv -Delimiter ';'
